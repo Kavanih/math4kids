@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Luckiest Guy", cursive;
+  background-color: #e6e6ea;
+  overflow: hidden;
+}
+.cointainer {
+  padding: 20px;
+  overflow: hidden;
+  background-color: #fe4a49;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.cointainer h1 {
+  margin-left: 10%;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  margin-right: 15%;
+  justify-items: end;
+  gap: 10px;
+  /* margin-left: 20%; */
+}
+
+.current a::after {
+  content: "-";
+  background-color: #fff;
+  font-size: 4px;
+  display: block;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 82% 18%;
+}
+.equation {
+  font-size: 65px;
+  background-color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 15%;
+  margin: 10px 10px 0 10px;
+}
+.equation h1 {
+  display: inline;
+  padding: 20px;
+}
+.answer-options {
+  font-size: 67px;
+  margin-right: 10px;
+}
+.answer-options h1 {
+  cursor: pointer;
+  color: whitesmoke;
+  border-radius: 3px;
+  margin-top: 10px;
+  text-align: center;
+}
+#option1 {
+  background-color: #fe4a49;
+  transition: 1s;
+}
+#option1:hover {
+  background-color: white;
+  color: #fe4a49;
+  transition: 1s;
+}
+#option2 {
+  background-color: #2ab7ca;
+  transition: 1s;
+}
+#option2:hover {
+  background-color: white;
+  color: #2ab7ca;
+  transition: 1s;
+}
+#option3 {
+  background-color: #fed766;
+  transition: 1s;
+}
+#option3:hover {
+  background-color: white;
+  color: #fed766;
+  transition: 1s;
+}
+.note {
+  text-align: center;
+  margin: 5px;
+  color: #fe4a49;
+}
+/* MEDIA QUERY */
+@media (max-width: 480px) {
+  .nav h2 {
+    text-align: center;
+  }
+  .equation h1 {
+    display: inline;
+    padding: 10px;
+  }
+  nav li {
+    font-size: 0.8rem;
+  }
+  .answer-options {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .answer-options h1 {
+    font-size: 60px;
+    padding-top: 2rem;
+    height: 18vh;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    font-size: 5px;
+  }
+  .cointainer a {
+    font-size: 16px;
+  }
+  .cointainer h1 {
+    margin: 0;
+  }
+  .answer-options h1 {
+    align-items: center;
+    padding-top: 40px;
+    font-size: 25px;
+  }
+}
